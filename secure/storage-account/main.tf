@@ -16,8 +16,8 @@ resource "azurerm_storage_account" "sa" {
 
  
   allow_nested_items_to_be_public   = true
-  enable_https_traffic_only         = false
-  min_tls_version                   = TLS1_0
+  enable_https_traffic_only         = true
+  min_tls_version                   = TLS1_2
   ## nfsv3_enabled                     = var.nfsv3_enabled
   ## infrastructure_encryption_enabled = var.infrastructure_encryption_enabled
   ## shared_access_key_enabled         = var.shared_access_key_enabled
