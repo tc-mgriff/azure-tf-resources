@@ -8,8 +8,8 @@ resource "azurerm_storage_account" "sa" {
   account_replication_type = "LRS"
   ## access_tier              = var.access_tier
   ## tags                     = var.tags
-  allow_nested_items_to_be_public   = false
-  enable_https_traffic_only         = true
-  min_tls_version                   = TLS1_2
- 
+  allow_nested_items_to_be_public   = "false"
+  enable_https_traffic_only         = "true"
+  min_tls_version                   = "TLS1_2"
+  container_access_type        = "private"
 }
